@@ -35,24 +35,36 @@
     .btn-close {
         align-self: flex-end;
     }
-    .container-main {
+    .block {
         max-width: 100%;
         width: 1300px;
-        
+        margin: auto;
     }
     .acordion {
         max-width: 100%;
         width: 400px;
         float: left;
-        padding: 30px;
+        padding: 20px;
     }
     .tab {
         max-width: 100%;
         width: 800px;
+        padding: 20px;
+        
     }
-    .tab-content button {
-        text-align: center;
+    .card {
+        width: 100%;
+        max-width: 1300px; 
+        margin: auto;
     }
+
+    .form{
+        width: 100%;
+        max-width: 1300px; 
+        margin: auto;
+        overflow: auto;
+    } 
+
 </style>
 </head>
 <body>
@@ -123,8 +135,8 @@
             </button>
         </div>
     </div>
-    <div class="container-main">
-        <div class="acordion">
+    <div class="block">
+        <div class="acordion row">
             <div class="accordion accordion-flush" id="accordionFlushExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
@@ -183,19 +195,20 @@
                 <button class="nav-link" id="social-tab" data-bs-toggle="tab" data-bs-target="#social-tab-pane" type="button" role="tab" aria-controls="social-tab-pane" aria-selected="false">Social</button>
             </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
+        <div class="tab-content text-center fst-italic" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Et incidunt laboriosam consectetur culpa deleniti hic officia omnis minima tempore perferendis officiis cum, dolorem ipsa quam nihil suscipit eum a quod.
-                <div class="button">
-                <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="button text-center">
+                <button type="button" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modalSizesm">
                     Launch demo modal
                 </button>
                 </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modalSizesm" tabindex="-1" aria-labelledby="modalSizesm" aria-hidden="true">
                     <div class="modal-dialog modal-sm">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptate consectetur quibusdam! Fugit aliquid aspernatur molestiae itaque cum repudiandae excepturi beatae similique, vero mollitia ipsum suscipit dicta quisquam, quibusdam officiis.</p>
                             </div>
                         </div>
                     </div>
@@ -203,16 +216,17 @@
             </div>
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam expedita debitis harum, quaerat totam perferendis qui repellat, soluta veritatis, repellendus aut labore? Tenetur provident tempora quas nulla aliquam ab ducimus?
-                <div class="button">
-                <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="button text-center">
+                <button type="button" class="btn btn-danger btn-xl" data-bs-toggle="modal" data-bs-target="#modalSizemd">
                     Launch demo modal
                 </button>
                 </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modalSizemd" tabindex="-1" aria-labelledby="modalSizemd" aria-hidden="true">
                     <div class="modal-dialog modal-md">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum similique nostrum laboriosam quia vitae laborum laudantium id autem, tenetur enim optio et ut! Expedita natus minima illum officiis temporibus laboriosam?</p>
                             </div>
                         </div>
                     </div>
@@ -220,16 +234,17 @@
             </div>
             <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore et architecto, voluptatum ea consequuntur odio nesciunt expedita nam tempora? Quod, quas consequatur! Sunt quaerat veritatis officiis adipisci architecto quos nemo.
-                <div class="button">
-                <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="button text-center">
+                <button type="button" class="btn btn-info btn-xl" data-bs-toggle="modal" data-bs-target="#modalSizelg">
                     Launch demo modal
                 </button>
                 </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modalSizelg" tabindex="-1" aria-labelledby="modalSizelg" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam aspernatur sunt non nobis doloribus asperiores porro quia facere adipisci, dignissimos dolor assumenda illo similique totam itaque aliquid, voluptatem in nihil.</p>
                             </div>
                         </div>
                     </div>
@@ -237,17 +252,16 @@
             </div>
             <div class="tab-pane fade" id="social-tab-pane" role="tabpanel" aria-labelledby="social-tab" tabindex="0">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt animi doloribus fuga perferendis. Adipisci perspiciatis sequi quia exercitationem cupiditate dolorum optio beatae tenetur accusantium quisquam! Sunt ea voluptatem dicta ut.
-                <div class="button">
-                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="button text-center">
+                <button type="button" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#modalSizexl">
                     Launch demo modal
                 </button>
                 </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modalSizexl" tabindex="-1" aria-labelledby="modalSizexl" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
-                            <div class="modal-header">
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam inventore fugiat doloribus iure fuga reiciendis corrupti. Nemo, provident. Incidunt ea placeat similique provident blanditiis nostrum dolore illo culpa hic. Neque?</p>
                         </div>
                     </div>
                 </div>
@@ -255,6 +269,60 @@
         </div>
     </div>
     </div>
+
+    <div class="form">
+        <div class="row">
+            <div class="col">
+                <p> Callback form</p>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Phone" aria-label="Phone">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="https://thumb.tildacdn.com/tild6264-3030-4635-b362-376130396464/-/resize/980x/-/format/webp/8___-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://thumb.tildacdn.com/tild3937-6635-4663-a236-393539386230/-/resize/980x/-/format/webp/7___-min.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://thumb.tildacdn.com/tild6336-3464-4632-b735-653134386335/-/resize/980x/-/format/webp/6___.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="https://thumb.tildacdn.com/tild6662-6462-4332-b437-616366623730/-/resize/980x/-/format/webp/10___.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
